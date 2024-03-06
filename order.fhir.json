@@ -1,0 +1,63 @@
+{
+    "resourceType": "Bundle",
+    "type": "collection",
+    "meta": {
+        "lastUpdated": "2024-03-05T11:20:00+05:00"
+    },
+    "identifier": {
+        "value": "registration_id",
+        "id": "24-250",
+        "_value": {
+            "id": "E-00025"
+        },
+        "type": {
+            "text": "tenant_id",
+            "id": "cf913442-417b-4ae4-9921-71814ada603f",
+            "coding": [{
+                "display": "encounter_id",
+                "id": "233b3981-27fe-46e0-a2c6-cc61e0c3e1dd"
+            }]
+        }
+    },
+    "entry": [{
+        "fullUrl": "https://akhilsystems.com/disclaimer/",
+        "resource": {
+            "resourceType": "ServiceRequest",
+            "id": "ICD-010",
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A narrative for the ServiceRequest resource</div>"
+            },
+            "subject": {
+                "display": "CBC Test"
+            },
+            "intent": "order",
+            "status": "draft",
+            "occurrenceDateTime": "2024-02-07",
+            "priority": "urgent",
+            "performer": [{
+                "display": "Dr Cecil Surgeon"
+            }]
+        }
+    },{
+        "fullUrl": "https://akhilsystems.com/disclaimer/2",
+        "resource": {
+            "resourceType": "ServiceRequest",
+            "id": "TY-001",
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A narrative for the ServiceRequest resource</div>"
+            },
+            "subject": {
+                "display": "FASTING BLOOD SUGAR"
+            },
+            "intent": "order",
+            "status": "draft",
+            "occurrenceDateTime": "2024-02-05",
+            "priority": "urgent",
+            "performer": [{
+                "display": "Dr. Deepak Senapati"
+            }]
+        }
+    }]
+}

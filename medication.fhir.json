@@ -1,0 +1,70 @@
+{
+    "resourceType": "MedicationRequest",
+  "subject": {
+    "reference": "Patient/ASPL001"
+  },
+  "requester": {
+    "reference": "Practitioner/Sanket"
+  },
+  "identifier": [
+    {
+      "system": "https://akhil-systems-his-test.squbix.com/",
+      "value": "MedicationRequest123"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/E-00025"
+  },
+  "status": "active",
+  "intent": "order",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+       "system": "https://akhil-systems-his-test.squbix.com/",
+      "code": "AdvilIbrufen",
+      "display": "Advil Ibrufen"
+      }]
+    }
+  },
+
+  "dosageInstruction": [
+    {
+      "text": "Take 1 unit of Advil Ibrufen orally before lunch, twice a week",
+      "doseAndRate" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+          "code" : "ordered",
+          "display" : "Ordered"
+        }]
+      },
+       "doseQuantity": {
+        "value": 1,
+        "unit": "unit(s)"
+      }
+    }],
+     
+      "route": {
+        "text": "Oral"
+      },
+      "timing": {
+        "repeat": {
+          "frequency": 2,
+          "period": 1,
+          "periodUnit": "wk"
+        }
+      }
+     
+    }
+  ],
+  "dispenseRequest": {
+    "quantity": {
+      "value": 1,
+      "unit": "unit(s)"
+    },
+    "expectedSupplyDuration": {
+      "value": 2,
+      "unit": "wk"
+    }
+  }
+}
