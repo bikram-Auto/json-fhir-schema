@@ -6,6 +6,10 @@
     },
     "entry": [{
         "fullUrl": "https://akhilsystems.com/Organization/",
+        "request": {
+            "method": "POST",
+            "url": "ServiceRequest"
+        },
         "resource":{
             "resourceType": "Organization",
             "text": {
