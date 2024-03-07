@@ -1,0 +1,115 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-appointment",
+    "type": "transaction",
+    "entry": [
+      {
+        "fullUrl": "urn:uuid:f110fb59-cd00-4e07-875a-82c7221c103f",
+        "request": {
+          "method": "POST",
+          "url": "Patient"
+        },
+        "resource": {
+          "resourceType": "Patient",
+          "id": "ASPL002",
+          "active": true,
+          "name": [
+            {
+              "use": "official",
+              "family": "AKHIL",
+              "given": [
+                "Sunita",
+                "Godara"
+              ],
+              "suffix": [
+                "Miss."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "9700030256",
+              "use": "mobile"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1995-05-28",
+          "managingOrganization": {
+            "reference": "cf913442-417b-4ae4-9921-71814ada603f/bf5ca04f-c8fb-455d-9493-ecec8c2185d9"
+          }
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:f110fb59-cd00-4e07-875a-82c7221c103g",
+        "request": {
+          "method": "POST",
+          "url": "Appointment"
+        },
+        "resource": {
+          "resourceType": "Appointment",
+          "status": "booked",
+          "specialty": [
+            {
+              "coding": [
+                {
+                  "system": "http://example.org/specialization",
+                  "code": "Dental",
+                  "display": "Dental"
+                }
+              ]
+            }
+          ],
+          "reason": [
+            {
+              "reference": {
+                "reference": "Condition/example",
+                "display": "Severe burn of left ear"
+              }
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "Routine",
+                "display": "Routine"
+              }
+            ],
+            "text": "Regular"
+          },
+          "start": "2024-03-06T01:10:00Z",
+          "end": "2024-04-29T09:00:00Z",
+          "minutesDuration": 60,
+          "created": "2024-03-01T07:30:00Z",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Practitioner/BM09",
+                "display": "Bijay Mazumdar"
+              },
+              "status": "accepted"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://akhil-systems-his-test.squbix.com/tenant_id",
+              "valueString": "cf913442-417b-4ae4-9921-71814ada603f"
+            },
+            {
+              "url": "https://akhil-systems-his-test.squbix.com/facility_id",
+              "valueString": "bf5ca04f-c8fb-455d-9493-ecec8c2185d9"
+            },
+            {
+              "url": "https://akhil-systems-his-test.squbix.com/appointment_method",
+              "valueString": "Online"
+            },
+            {
+              "url": "https://akhil-systems-his-test.squbix.com/visit_type",
+              "valueString": "first"
+            }
+          ]
+        }
+      }
+    ]
+  }
