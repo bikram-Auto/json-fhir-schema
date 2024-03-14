@@ -13,8 +13,7 @@
           "resourceType": "Patient",
           "id": "ASPL002",
           "active": true,
-          "name": [
-            {
+          "name": [{
               "use": "official",
               "family": "AKHIL",
               "given": [
@@ -26,13 +25,11 @@
               ]
             }
           ],
-          "telecom": [
-            {
+          "telecom": [{
               "system": "phone",
               "value": "9700030256",
               "use": "mobile"
-            }
-          ],
+            }],
           "gender": "male",
           "birthDate": "1995-05-28",
           "managingOrganization": {
